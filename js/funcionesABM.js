@@ -39,7 +39,10 @@ function EditarCD(idParametro)
 	funcionAjax.fail(function(retorno){	
 		$("#informe").html(retorno.responseText);	
 	});	
+	setTimeout(function() {"MostrarFormAlta"}, 5);
 	Mostrar("MostrarFormAlta");
+
+	
 }
 
 function GuardarCD()

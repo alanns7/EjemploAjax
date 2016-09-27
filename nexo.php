@@ -39,8 +39,11 @@ switch ($queHago) {
 			$cantidad=$cd->GuardarCD();
 			echo $cantidad;
 
+			
 		break;
 	case 'TraerCD':
+
+	//sleep(5); retrasa la carga
 			$cd = cd::TraerUnCd($_POST['id']);		
 			echo json_encode($cd) ;
 
